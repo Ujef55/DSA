@@ -15,7 +15,12 @@ const timer = () => {
             minutes ++;
         }
     }
-    displayTime.innerHTML = `${minutes} : ${seconds} : ${tenthOfSecond}`
+
+    let min =  minutes < 10 ? '0' + minutes : minutes;
+    let sec = seconds < 10 ? '0' + seconds : seconds;
+    let miliSec = tenthOfSecond < 10 ? '0' + tenthOfSecond : tenthOfSecond;
+
+    displayTime.innerHTML = `${min} : ${sec} : ${miliSec}`;
 }
 
 const timerStart = () => {
@@ -24,7 +29,3 @@ const timerStart = () => {
 
 
 start.addEventListener('click', timerStart);
-
-
-
-
