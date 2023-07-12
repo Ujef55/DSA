@@ -25,6 +25,10 @@ const timer = () => {
 
 const timerStart = () => {
     time = setInterval(timer, 10);
+    const timerStop = () => {
+        clearInterval(time);
+    }
+    stop.addEventListener('click', timerStop);
 }
 
 
