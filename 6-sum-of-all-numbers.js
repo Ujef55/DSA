@@ -16,3 +16,12 @@ const totalOfAllNumbers = (num) => {
     return sum;
 }
 console.log(totalOfAllNumbers(10));
+
+
+// Third approach
+
+const total = (n) => {
+    return n*(n+1)/2
+}
+
+console.log(total(10));
