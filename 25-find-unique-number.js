@@ -7,3 +7,4 @@ const findUniqueNumber = (arr) => {
 }
 
 console.log(findUniqueNumber([1,2,1,6,4,2,4]));
+
