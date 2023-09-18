@@ -12,10 +12,11 @@ const pairSum = (arr) => {
         for (let j = i + 1; j < arr.length; j ++) {
             if (arr[i] + arr[j] == sum) {
                 pair = [arr[i], arr[j]];
+                pair.sort();
                 console.log(pair);
             }
         }
     }
 }
 
-pairSum([1,2,3,4,5,6]);
+pairSum([6,1,2,3,4,5]);
