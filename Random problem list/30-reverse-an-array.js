@@ -6,11 +6,7 @@ const reverseArray = (arr, m) => {
     let start = 0;
     let end = arr.length - 1;
 
-    for (let i = 0; i<end; i++) {
-        if (i === m) {
-            start = i;
-        }
-    }
+    start = m+1;
     
     while (start<=end) {
         let temp = arr[start];
